@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+   
+    <section id="survey">
+
+        <header>
+            <h1 id="title">Customer Satisfaction Survey</h1>
+            <p id="description">Help us improve your experience</p>
+        </header>
+
+        <form action="" id="survey-form">
+
+            <div class="group">
+                <label for="name" id="name-label">Name</label>
+                <br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required/>
+                <br>
+            </div>
+
+            <div class="group">
+                <label for="email" id="email-label">Email</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required/>
+                <br>
+            </div>
+
+            <div class="group">
+                <label for="number" id="number-label">In a scale from 0 to 10, satisfied are you with our company?</label>
+                <br>
+                <input type="number" id="number" name="age" placeholder="Choose score:" min="0" max="10" required/>
+            <br>
+            </div>
+
+            <div class="group select">
+                <label for="dropdown">How long have you been our customer?</label>
+                <br>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Select time interval:</option>
+                    <option value="very-satisfied"> Less than 6 months </option>
+                    <option value="satisfied"> 6 months - 1 year </option>
+                    <option value="neutral">1 year - 2 years</option>
+                    <option value="unsatisfied">More than 2 years</option>
+                </select>
+                <br>
+            </div>
+
+            <div class="group checkbox">
+                <p>How would you describe our products? Select all that apply.</p> <br>
+
+                <label> <input type="checkbox" name="checkbox" value="useful" id="useful"/> Useful</label><br>
+                <label> <input type="checkbox" name="checkbox" value="reliable" id="reliable"/> Reliable</label><br>
+                <label> <input type="checkbox" name="checkbox" value="overpriced" id="overpriced"/> Overpriced</label><br>
+                <label> <input type="checkbox" name="checkbox" value="unique" id="unique"/> Unique</label><br>
+                <label> <input type="checkbox" name="checkbox" value="price-performance" id="price-performance"/> Good price-performance ratio</label><br>
+            </div>
+
+            <div class="group radio">
+                <p>Would you recommend our services to a friend?</p> <br>
+
+                <input type="radio" name="radio" id="yes-recommend" value="yes-recommend"/> Yes <br>
+                <input type="radio" name="radio" id="maybe-recommend" value="maybe-recommend"/> Maybe <br>
+                <input type="radio" name="radio" id="no-recommend" value="no-recommend"/> No <br>
+
+            </div>
+
+            <div class="group">
+                <p>Is there anything you'd like to add?</p>
+                <textarea name="suggestions" id="suggestions" name="suggestions" placeholder="Enter your suggestion here."></textarea>
+            </div>
+            
+            <input id="submit" type="submit" value="Submit">
+
+        </form>
+    
+        
+
+    </section>
+
+    <footer>
+        <h3><a href="https://www.nationalgeographic.com/travel/article/fast-facts-25" target="blank">Background image source</a></h3>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/7068955d05.js"></script>
+    <script src="app/js/script.js"></script>
+</body>
+</html>
